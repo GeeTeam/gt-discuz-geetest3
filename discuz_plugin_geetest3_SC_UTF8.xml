@@ -47,8 +47,8 @@
 
 			<item id="0">
 				<item id="displayorder"><![CDATA[1]]></item>
-				<item id="title"><![CDATA[PC版ID:]]></item>
-				<item id="description"><![CDATA[ID]]></item>
+				<item id="title"><![CDATA[验证码ID:]]></item>
+				<item id="description"><![CDATA[验证码ID，在http://www.geetest.com注册账号获取]]></item>
 				<item id="variable"><![CDATA[captchaid]]></item>
 				<item id="type"><![CDATA[text]]></item>
 				<item id="value"><![CDATA[61fc8a91b1ca3504d4dde6bc5a06f1b3]]></item>
@@ -56,8 +56,8 @@
 			</item>
 			<item id="1">
 				<item id="displayorder"><![CDATA[2]]></item>
-				<item id="title"><![CDATA[PC版KEY:]]></item>
-				<item id="description"><![CDATA[KEY]]></item>
+				<item id="title"><![CDATA[验证码KEY:]]></item>
+				<item id="description"><![CDATA[验证码KEY，在http://www.geetest.com注册账号获取]]></item>
 				<item id="variable"><![CDATA[privatekey]]></item>
 				<item id="type"><![CDATA[text]]></item>
 				<item id="value"><![CDATA[d96aa23a45771f253671fc02b0eb7ae5]]></item>

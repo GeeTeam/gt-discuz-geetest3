@@ -90,51 +90,17 @@ class plugin_geetest3_member  extends plugin_geetest3{
     public function _show(){
          include template('common/header_ajax');
          $js = <<<HTML
-
- <script type="text/javascript">
-    var handler = function (captchaObj) {
-
-        captchaObj.onReady(function () {
-            $("header-loggin-btn").click();
-        }).onSuccess(function () {
-            captchaObj.bindForm('#lsform');
+<script type="text/javascript" reload="1"> 
+if (window.__gtcaptch__) {
+            window.__gtcaptch__.onSuccess(function () {
+            window.__gtcaptch__.bindForm('#lsform');
             document.getElementsByClassName("vm")[2].click();
-        });         
-        var btn = document.getElementById('header-loggin-btn');
-        
-        console.log(btn);
-            btn.addEventListener('click',function () {
-                // debugger;
-            captchaObj.verify();
+        });
+    window.__gtcaptch__.verify();
+}
+</script>
 
-        })
-     };
-    var xmlHttp;
-    function createxmlHttpRequest() {
-        if (window.ActiveXObject) {
-            xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
-        } else if (window.XMLHttpRequest) {
-            xmlHttp = new XMLHttpRequest();
-        }
-    }
-    createxmlHttpRequest();
-    xmlHttp.open("GET", "./plugin.php?id=geetest3&model=start");
-    xmlHttp.send(null);
-    xmlHttp.onreadystatechange = function(result) {
-        if ((xmlHttp.readyState == 4) && (xmlHttp.status == 200)) {
-                var obj = JSON.parse(xmlHttp.responseText);          
-                console.log(obj);
-                    initGeetest({
-                        gt: obj.gt,
-                        challenge: obj.challenge,
-                        offline: !obj.success,
-                        timeout: '5000',
-                        product: "bind", // 产品形式，包括：float，popup
-                        width: "300px"
-                    }, handler);
-        }
-    }
-         </script>
+
 HTML;
         echo($js);
          include template('common/footer_ajax');

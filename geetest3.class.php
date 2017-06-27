@@ -82,19 +82,7 @@ class plugin_geetest3{
 JS;
         return $output;
     }
-    
-    //QQ互联注册嵌入点
-    public function global_header() {
-        $cur = CURMODULE;
-        if ($cur == "connect" && $this->_cur_mod_is_valid()) {
-            $cur_mod = "popup";
-            $gt_geetest_id = "gt_global_header";
-            $btn_id = "registerformsubmit";
-            return $this->_code_output($cur_mod, $gt_geetest_id, '', $btn_id) . $this->_fix_register($gt_geetest_id);
-        }
 
-
-    }
     
     function global_login_extra() {
         global $_G;
@@ -115,11 +103,57 @@ JS;
             o.style.display="none";
             lsform.appendChild(o);
         </script>
+        <script type="text/javascript">
+            var handler = function (captchaObj) {
+                window.__gtcaptch__ = captchaObj;         
+             };
+            var xmlHttp;
+            function createxmlHttpRequest() {
+                if (window.ActiveXObject) {
+                    xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+                } else if (window.XMLHttpRequest) {
+                    xmlHttp = new XMLHttpRequest();
+                }
+            }
+            createxmlHttpRequest();
+            xmlHttp.open("GET", "./plugin.php?id=geetest3&model=start");
+            xmlHttp.send(null);
+            xmlHttp.onreadystatechange = function(result) {
+                if ((xmlHttp.readyState == 4) && (xmlHttp.status == 200)) {
+                        var obj = JSON.parse(xmlHttp.responseText);          
+                        console.log(obj);
+                            initGeetest({
+                                gt: obj.gt,
+                                challenge: obj.challenge,
+                                offline: !obj.success,
+                                timeout: '5000',
+                                product: "bind", // 产品形式，包括：float，popup
+                                width: "300px"
+                            }, handler);
+                }
+            }
+        </script>
 
 HTML;
         return $html;
     }
 }
+
+    
+    //QQ互联注册嵌入点
+    public function global_header() {
+        $cur = CURMODULE;
+        if ($cur == "connect" && $this->_cur_mod_is_valid()) {
+            $cur_mod = "popup";
+            $gt_geetest_id = "gt_global_header";
+            $btn_id = "registerformsubmit";
+            return $this->_code_output($cur_mod, $gt_geetest_id, '', $btn_id) . $this->_fix_register($gt_geetest_id);
+        }
+
+
+    }
+
+
 
     
     public function _code_output($cur_mod = '', $geetest_id = 'gt_geetest', $page_type = '', $param = '') {
