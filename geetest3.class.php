@@ -76,6 +76,7 @@ class plugin_geetest3{
             var registerformsubmit = $('registerformsubmit');
             var geetest = $('$gt_geetest_id');
             registerformsubmit.parentNode.insertBefore(geetest, registerformsubmit);
+            $('$gt_geetest_id').style.marginBottom = "20px";
         }
         _attachEvent(window, 'load', move_fast_geetest_before_submit);
     </script>
@@ -307,17 +308,17 @@ HTML;
             return in_array($mod, $this->mods);
         }
         
-        private function getStyle($page_type) {
-            $style_str = $style_str = $this->style[$page_type];
+        // private function getStyle($page_type) {
+        //     $style_str = $style_str = $this->style[$page_type];
             
-            $style_arr = explode(" ", $style_str);
-            $top = $style_arr[0] == "auto" ? "auto" : $style_arr[0] . 'px ';
-            $bottom = $style_arr[1] == "auto" ? "auto" : $style_arr[1] . 'px ';
-            $left = $style_arr[2] == "auto" ? "auto" : $style_arr[2] . 'px ';
-            $right = $style_arr[3] == "auto" ? "auto" : $style_arr[3] . 'px';
-            $margin = "margin:" . $top . ' ' . $right . ' ' . $bottom . ' ' . $left;
-            return $margin;
-        }
+        //     $style_arr = explode(" ", $style_str);
+        //     $top = $style_arr[0] == "auto" ? "auto" : $style_arr[0] . 'px ';
+        //     $bottom = $style_arr[1] == "auto" ? "auto" : $style_arr[1] . 'px ';
+        //     $left = $style_arr[2] == "auto" ? "auto" : $style_arr[2] . 'px ';
+        //     $right = $style_arr[3] == "auto" ? "auto" : $style_arr[3] . 'px';
+        //     $margin = "margin:" . $top . ' ' . $right . ' ' . $bottom . ' ' . $left;
+        //     return $margin;
+        // }
 
 
 

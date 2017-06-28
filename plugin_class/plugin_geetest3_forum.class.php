@@ -80,13 +80,13 @@ JS;
         $output = <<<JS
     <script type="text/javascript">
         function move_fast_geetest_before_submit() {
-            if($('livereplysubmit') != null){
+            if($('livereplysubmit')){
+                console.log($('livereplysubmit'));
                 var livereplysubmit = $('livereplysubmit');
                 var geetest = $('$gt_geetest_id');
                 livereplysubmit.parentNode.insertBefore(geetest, livereplysubmit);
-
             }else{
-                return;
+                $('gt_forumdisplay_postbutton_top').style.display = "none";
             }
         }
         _attachEvent(window, 'load', move_fast_geetest_before_submit);
