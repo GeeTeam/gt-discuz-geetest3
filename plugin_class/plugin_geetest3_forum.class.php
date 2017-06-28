@@ -80,7 +80,7 @@ JS;
         $output = <<<JS
     <script type="text/javascript">
         function move_fast_geetest_before_submit() {
-            if($('livereplysubmit')){
+            if($('livereplysubmit') != null){
                 var livereplysubmit = $('livereplysubmit');
                 var geetest = $('$gt_geetest_id');
                 livereplysubmit.parentNode.insertBefore(geetest, livereplysubmit);
