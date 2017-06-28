@@ -85,6 +85,8 @@ JS;
                 var geetest = $('$gt_geetest_id');
                 livereplysubmit.parentNode.insertBefore(geetest, livereplysubmit);
 
+            }else{
+                return;
             }
         }
         _attachEvent(window, 'load', move_fast_geetest_before_submit);
