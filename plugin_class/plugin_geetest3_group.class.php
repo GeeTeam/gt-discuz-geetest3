@@ -56,7 +56,6 @@ class plugin_geetest3_group  extends plugin_geetest3{
 
         window.gt_custom_ajax = function (status, $) {
             function refresh(){
-                console.log("click");
                 setTimeout(function(){
                     $(".gt_refresh_button").click();
                 },3000);

@@ -14,7 +14,6 @@ var InitCaptcha = function(form,button,cp_button,callback) {
         // btn.click(function () {
         //     captchaObj.verify();
         // })
-        console.log(btn);
         btn.addEventListener('click',function(){
         	captchaObj.verify();
         })
@@ -49,7 +48,6 @@ var InitCaptcha = function(form,button,cp_button,callback) {
                 var obj = JSON.parse(xmlHttp.responseText);
                 // var obj = xmlHttp.responseText;
              // var obj = eval('(' + result.target.response + ')');
-            console.log(obj);
             if (obj.success == 1) {
 
                 loadGeetest(obj);

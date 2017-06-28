@@ -34,7 +34,6 @@ class plugin_geetest3_forum extends plugin_geetest3
 
         window.gt_custom_ajax = function (status, $) {
             function refresh(){
-                console.log("click");
                 setTimeout(function(){
                     $(".gt_refresh_button").click();
                 },3000);
@@ -81,9 +80,12 @@ JS;
         $output = <<<JS
     <script type="text/javascript">
         function move_fast_geetest_before_submit() {
-            var livereplysubmit = $('livereplysubmit');
-            var geetest = $('$gt_geetest_id');
-            livereplysubmit.parentNode.insertBefore(geetest, livereplysubmit);
+            if($('livereplysubmit')){
+                var livereplysubmit = $('livereplysubmit');
+                var geetest = $('$gt_geetest_id');
+                livereplysubmit.parentNode.insertBefore(geetest, livereplysubmit);
+
+            }
         }
         _attachEvent(window, 'load', move_fast_geetest_before_submit);
 

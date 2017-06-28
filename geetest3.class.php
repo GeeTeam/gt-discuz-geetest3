@@ -90,7 +90,7 @@ JS;
             return;
         } 
         else if ($_G['uid'] == '0' && $this->logging_mod_valid()) {
-        $html = <<<HTML
+$html = <<<HTML
         <script type="text/javascript" src="source/plugin/geetest3/js/gt3-init.js"></script>
         <script type="text/javascript" src="source/plugin/geetest3/js/gt.js"></script>
 
@@ -121,7 +121,6 @@ JS;
             xmlHttp.onreadystatechange = function(result) {
                 if ((xmlHttp.readyState == 4) && (xmlHttp.status == 200)) {
                         var obj = JSON.parse(xmlHttp.responseText);          
-                        console.log(obj);
                             initGeetest({
                                 gt: obj.gt,
                                 challenge: obj.challenge,
@@ -326,9 +325,9 @@ HTML;
 
     $html = <<<JS
         <script type="text/javascript" src="source/plugin/geetest3/js/gt3-init.js"></script>
+        <script type="text/javascript" src="source/plugin/geetest3/js/gt.js"></script>
 
         <script type="text/javascript" reload="1">
-        console.log('$element');
             var geetest = '$element';
             InitCaptcha(geetest);
         </script>
