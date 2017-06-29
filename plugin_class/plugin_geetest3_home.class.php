@@ -133,9 +133,9 @@ html;
                 $response = $this->geetest_validate($_GET['geetest_challenge'], $_GET['geetest_validate'], $_GET['geetest_seccode']);
 				if($response != 1){
 					if($response == -1){
-						showmessage(lang('plugin/geetest', 'seccode_invalid'));
+						showmessage(lang('plugin/geetest', 'geetest_error1'));
 					}else if($response == 0){
-						showmessage( lang('plugin/geetest', 'seccode_expired') );
+						showmessage( lang('plugin/geetest', 'geetest_error2') );
 					}
 				}else{
 					$success = 1;

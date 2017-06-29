@@ -41,10 +41,9 @@
                                 </item>
                         </item>
                 </item>
-                <item id="version"><![CDATA[X2.5,X3,X3.1,X3.2]]></item>
+                <item id="version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3]]></item>
                 <item id="installfile"><![CDATA[install.php]]></item>
                 <item id="var">
-
                         <item id="0">
                                 <item id="displayorder"><![CDATA[1]]></item>
                                 <item id="title"><![CDATA[验证码ID:]]></item>
@@ -152,8 +151,8 @@
                 </item>  
                 <item id="language">
                         <item id="scriptlang">
-                                <item id="seccode_invalid"><![CDATA[错误：验证不通过！请重试！]]></item>
-                                <item id="seccode_expired"><![CDATA[错误：请不要再次提交！验证已使用过，请刷新页面之后再使用！]]></item>
+                                <item id="geetest_error1"><![CDATA[错误：验证不通过！请重试！]]></item>
+                                <item id="geetest_error2"><![CDATA[错误：请不要再次提交！验证已使用过，请刷新页面之后再使用！]]></item>
                         </item>
                 </item>
         </item>
