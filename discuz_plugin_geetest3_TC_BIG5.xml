@@ -154,8 +154,6 @@
 				<item id="seccode_invalid"><![CDATA[錯誤：驗證不通過！請重試！]]></item>
 				<item id="seccode_expired"><![CDATA[錯誤：請不要再次提交！驗證已使用過，請刷新頁面之後再使用！]]></item>
 			</item>
-			<item id="templatelang">
-			</item>
 		</item>
 	</item>
 </root>

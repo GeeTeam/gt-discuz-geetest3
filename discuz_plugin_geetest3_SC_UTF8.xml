@@ -149,7 +149,7 @@
                                 <item id="value"><![CDATA[0]]></item>
                                 <item id="extra"><![CDATA[]]></item>
                         </item>
-                </item>
+                </item>  
                 <item id="language">
                         <item id="scriptlang">
                                 <item id="seccode_invalid"><![CDATA[错误：验证不通过！请重试！]]></item>
