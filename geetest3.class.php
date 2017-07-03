@@ -202,7 +202,7 @@ HTML;
                 case 'blog':
                 case 'follow':
                 case 'comment':
-                    $output = "<div id='$geetest_id'";
+                    $output = "<div id='$geetest_id'>";
                     
                     $output.= $this->get_widget($geetest_id);
                     $output.= '</div>';
