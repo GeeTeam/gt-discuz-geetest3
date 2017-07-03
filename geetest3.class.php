@@ -186,7 +186,7 @@ HTML;
                 case 'logging':
 
 
-                    $output = " <div  class='rfm'><table><tbody><tr><th><div>*&#28369;&#21160;&#39564;&#35777;:</div></th><td id='$geetest_id'>";
+                    $output = " <div  class='rfm'><table><tbody><tr><th><div>*&#34892;&#20026;&#39564;&#35777;:</div></th><td id='$geetest_id'>";
                     $output.= $this->get_widget($geetest_id);
                     $output.= '</td></tr></tbody></table></div>';
                     break;
