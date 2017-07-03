@@ -325,8 +325,8 @@ HTML;
     public function get_widget($element) {
 
     $html = <<<JS
-        <script type="text/javascript" src="source/plugin/geetest3/js/gt3-init.js"></script>
-        <script type="text/javascript" src="source/plugin/geetest3/js/gt.js"></script>
+        <script type="text/javascript" src="source/plugin/geetest33/js/gt3-init.js"></script>
+        <script type="text/javascript" src="source/plugin/geetest33/js/gt.js"></script>
 
         <script type="text/javascript" reload="1">
             var geetest = '$element';

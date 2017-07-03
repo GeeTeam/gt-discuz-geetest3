@@ -182,10 +182,10 @@ JS;
                 if ($response != 1) {
                     
                     if ($response == - 1) {
-                        showmessage(lang('plugin/geetest', 'geetest_error1'));
+                        showmessage(lang('plugin/geetest3', 'geetest_error1'));
                     } 
                     else if ($response == 0) {
-                        showmessage(lang('plugin/geetest', 'geetest_error2'));
+                        showmessage(lang('plugin/geetest3', 'geetest_error2'));
                     }
                 } 
                 else {

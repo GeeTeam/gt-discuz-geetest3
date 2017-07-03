@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <root>
 	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.2]]></item>
+	<item id="Time"><![CDATA[2017-06-30 11:54]]></item>
 	<item id="Data">
 		<item id="plugin">
-			<item id="available"><![CDATA[0]]></item>
+			<item id="available"><![CDATA[1]]></item>
 			<item id="adminid"><![CDATA[1]]></item>
 			<item id="name"><![CDATA[·¥ÅçÅçÃÒ½X3.0ª©¥»¡]geetest3.0¡^]]></item>
 			<item id="identifier"><![CDATA[geetest3]]></item>
-			<item id="description"><![CDATA[·¥ÅçÅçÃÒ¬O¥þ²y­º®a·s¤@¥N¦æ¬°¦¡ÅçÃÒ§Þ³NªA°È´£¨Ñ°Ó¡A¬°µ¹¤¬Ápºô¥@¬Éªº¤H­Ì±a¥h¡u§ó¦w¥þ¡B§ó«K±¶¡B§ó¨ã´¼¼zªºÅçÃÒ¡v¬°¥Ø¼Ð¦Ó¤£Â_«e¦æ¡C·¥Åç«á¥x§Y¥i³B²z200¦hºØ³æºû«×ªºµ¦²¤ÀË¬d¡C3.0ÅçÃÒ¦w¥þ¨t²Î¨¾¿m²Õ¦Xµ¦²¤¡A¯à®Ú¾Úºô¯¸­±Á{ªº­·ÀI¯S¼xÆF¬¡½Õ±±À³¹ï±¹¬I¡C¦p§PÂ_¬O¥¿±`¥Î¤á¡A0.4¬í§Y¥i³q¹LÅçÃÒ¡A´£¤É¥Î¤áÅçÃÒÅéÅç¡C]]></item>
+			<item id="description"><![CDATA[·¥ÅçÅçÃÒ¬O¥þ²y­º®a·s¤@¥N¦æ¬°¦¡ÅçÃÒ§Þ³NªA°È´£¨Ñ°Ó¡A¬°µ¹¤¬Ápºô¥@¬Éªº¤H­Ì±a¥h¡u§ó¦w¥þ¡B§ó«K±¶¡B§ó¨ã´¼¼zªºÅçÃÒ¡v¬°¥Ø¼Ð¦Ó¤£Â_«e¦æ¡C·¥Åç«á¥x§Y¥i³B²z200¦hºØ&gt;³æºû«×ªºµ¦²¤ÀË¬d¡C3.0ÅçÃÒ¦w¥þ¨t²Î¨¾¿m²Õ¦Xµ¦²¤¡A¯à®Ú¾Úºô¯¸­±Á{ªº­·ÀI¯S¼xÆF¬¡½Õ±±À³¹ï±¹¬I¡C¦p§PÂ_¬O¥¿±`¥Î¤á¡A0.4¬í§Y¥i³q¹LÅçÃÒ¡A´£¤É¥Î¤áÅçÃÒÅéÅç¡C]]></item>
 			<item id="datatables"><![CDATA[]]></item>
 			<item id="directory"><![CDATA[geetest3/]]></item>
 			<item id="copyright"><![CDATA[geetest Inc.]]></item>
@@ -42,7 +44,6 @@
 			</item>
 		</item>
 		<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3]]></item>
-		<item id="installfile"><![CDATA[install.php]]></item>
 		<item id="var">
 			<item id="0">
 				<item id="displayorder"><![CDATA[1]]></item>
@@ -77,7 +78,7 @@
 				<item id="description"><![CDATA[²¾°ÊºÝÅçÃÒÅéÅç±o¨ìÀu¤Æ¡A²¾°ÊºÝÅçÃÒ¥u¤ä«ùÄ²«Ìª©¡A¤£¤ä«ù¼Ð·Çª©¡I]]></item>
 				<item id="variable"><![CDATA[mobile]]></item>
 				<item id="type"><![CDATA[radio]]></item>
-				<item id="value"><![CDATA[0]]></item>
+				<item id="value"><![CDATA[1]]></item>
 				<item id="extra"><![CDATA[]]></item>
 			</item>
 			<item id="4">
@@ -86,7 +87,6 @@
 				<item id="description"><![CDATA[»Ý­nÅçÃÒªº¼Ò¶ô¡I]]></item>
 				<item id="variable"><![CDATA[mod]]></item>
 				<item id="type"><![CDATA[selects]]></item>
-				<item id="value"><![CDATA[]]></item>
 				<item id="extra"><![CDATA[1 = µù¥U¼Ò¶ô
 2 = µn¿ý¼Ò¶ô
 3 = µo©«¼Ò¶ô
@@ -114,7 +114,6 @@
 				<item id="description"><![CDATA[]]></item>
 				<item id="variable"><![CDATA[groupid]]></item>
 				<item id="type"><![CDATA[groups]]></item>
-				<item id="value"><![CDATA[]]></item>
 				<item id="extra"><![CDATA[]]></item>
 				<item id="__value">
 					<item id="0"><![CDATA[9]]></item>
@@ -149,6 +148,8 @@
 				<item id="extra"><![CDATA[]]></item>
 			</item>
 		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
 		<item id="language">
 			<item id="scriptlang">
 				<item id="geetest_error1"><![CDATA[¿ù»~¡GÅçÃÒ¤£³q¹L¡I½Ð­«¸Õ¡I]]></item>

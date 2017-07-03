@@ -150,9 +150,9 @@ class mobileplugin_geetest3_member  extends mobileplugin_geetest3{
                 $response = $this->geetest_validate($_GET['geetest_challenge'], $_GET['geetest_validate'], $_GET['geetest_seccode']);
                     if($response != 1){//
                         if($response == -1){
-                            showmessage(lang('plugin/geetest', 'geetest_error1'));
+                            showmessage(lang('plugin/geetest3', 'geetest_error1'));
                         }else if($response == 0){
-                            showmessage( lang('plugin/geetest', 'geetest_error2') );
+                            showmessage( lang('plugin/geetest3', 'geetest_error2') );
                         }
                     }
                 }
@@ -168,9 +168,9 @@ class mobileplugin_geetest3_member  extends mobileplugin_geetest3{
 
                 if($response != 1){//
                     if($response == -1){
-                        showmessage(lang('plugin/geetest', 'geetest_error1'));
+                        showmessage(lang('plugin/geetest3', 'geetest_error1'));
                     }else if($response == 0){
-                        showmessage( lang('plugin/geetest', 'geetest_error2') );
+                        showmessage( lang('plugin/geetest3', 'geetest_error2') );
                     }
                 }
             }
@@ -218,9 +218,9 @@ class mobileplugin_geetest3_forum extends mobileplugin_geetest3 {
                 $response = $this->geetest_validate($_GET['geetest_challenge'], $_GET['geetest_validate'], $_GET['geetest_seccode']);
                 if($response != 1){
                     if($response == -1){
-                        showmessage(lang('plugin/geetest', 'geetest_error1'));
+                        showmessage(lang('plugin/geetest3', 'geetest_error1'));
                     }else if($response == 0){
-                        showmessage( lang('plugin/geetest', 'geetest_error2') );
+                        showmessage( lang('plugin/geetest3', 'geetest_error2') );
                     }
                 }else{
                     $success == 1;
