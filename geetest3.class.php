@@ -117,7 +117,7 @@ $html = <<<HTML
                 }
             }
             createxmlHttpRequest();
-            xmlHttp.open("GET", "./plugin.php?id=geetest3&model=start");
+            xmlHttp.open("GET", "./plugin.php?id=geetest3&model=start&t=" + (new Date()).getTime());
             xmlHttp.send(null);
             xmlHttp.onreadystatechange = function(result) {
                 if ((xmlHttp.readyState == 4) && (xmlHttp.status == 200)) {
