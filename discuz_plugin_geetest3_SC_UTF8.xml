@@ -153,7 +153,7 @@
 		<item id="language">
 			<item id="scriptlang">
 				<item id="geetest_error1"><![CDATA[错误：验证不通过！请重试！]]></item>
-				<item id="geetest_error2"><![CDATA[错误：请不要再次提交！验证已使用过，请刷新页面之后再使用！]]></item>
+				<item id="geetest_error2"><![CDATA[错误：请点击下方验证按钮，验证通过后再提交！]]></item>
 			</item>
 		</item>
 	</item>
