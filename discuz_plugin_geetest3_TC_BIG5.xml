@@ -141,7 +141,7 @@
 			<item id="6">
 				<item id="displayorder"><![CDATA[7]]></item>
 				<item id="title"><![CDATA[根據發帖數關閉驗證:]]></item>
-				<item id="description"><![CDATA[發帖數超過此設置的會員將不受驗證碼功能限制，0表示所有會員均受限制]]></item>
+				<item id="description"><![CDATA[每天發帖數超過此設置的會員將不受驗證碼功能限制，0表示所有會員均受限制]]></item>
 				<item id="variable"><![CDATA[post_num]]></item>
 				<item id="type"><![CDATA[text]]></item>
 				<item id="value"><![CDATA[0]]></item>

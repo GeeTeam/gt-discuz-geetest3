@@ -1,6 +1,7 @@
 <?php
-
-
+if (!defined('IN_DISCUZ')) {
+    exit('Access Denied');
+}
    
 class plugin_geetest3_member  extends plugin_geetest3{  
 

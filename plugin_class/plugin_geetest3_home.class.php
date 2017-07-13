@@ -1,5 +1,7 @@
 <?php
-
+if (!defined('IN_DISCUZ')) {
+    exit('Access Denied');
+}
 
 class plugin_geetest3_home extends plugin_geetest3 {
     //修正验证条的位置

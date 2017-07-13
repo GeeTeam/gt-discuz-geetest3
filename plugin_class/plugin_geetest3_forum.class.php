@@ -1,5 +1,7 @@
-
 <?php
+if (!defined('IN_DISCUZ')) {
+    exit('Access Denied');
+}
 error_reporting(E_ERROR);
 
 class plugin_geetest3_forum extends plugin_geetest3

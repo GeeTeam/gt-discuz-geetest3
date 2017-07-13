@@ -141,7 +141,7 @@
 			<item id="6">
 				<item id="displayorder"><![CDATA[7]]></item>
 				<item id="title"><![CDATA[根据发帖数关闭验证:]]></item>
-				<item id="description"><![CDATA[发帖数超过此设置的会员将不受验证码功能限制，0表示所有会员均受限制]]></item>
+				<item id="description"><![CDATA[每天发帖数超过此设置的会员将不受验证码功能限制，0表示所有会员均受限制]]></item>
 				<item id="variable"><![CDATA[post_num]]></item>
 				<item id="type"><![CDATA[text]]></item>
 				<item id="value"><![CDATA[0]]></item>

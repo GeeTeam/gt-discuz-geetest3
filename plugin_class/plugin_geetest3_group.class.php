@@ -1,5 +1,7 @@
 <?php 
-
+if (!defined('IN_DISCUZ')) {
+    exit('Access Denied');
+}
 class plugin_geetest3_group  extends plugin_geetest3{  
     
     function post_middle(){
